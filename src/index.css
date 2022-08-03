@@ -1,0 +1,22 @@
+body{
+    background-color: antiquewhite;
+}
+
+.success{
+    border-radius: 2px;
+    padding:10px;
+    color: green;
+    background-color: rgb(232, 231, 231);
+    font-size: 20px;
+    border: 5px outset rgb(7, 220, 7)
+    
+
+}
+.error {
+    border-radius: 2px;
+    padding:10px;
+    color: red;
+    background-color: rgb(232, 231, 231);
+    font-size: 20px;
+    border: 5px outset red
+}
