@@ -15,7 +15,7 @@ import './index.css'
 
 const App=()=>{
   const [persons, setPersons] = useState([])
-  const [newName, setNewName] = useState('Arto Hella')
+  const [newName, setNewName] = useState('')
   const [newPhone, setNewPhone] = useState([])
   const [searchName, setSearchName] = useState("")
   const [successMessage, setSuccessMessage] = useState(null)
@@ -126,7 +126,7 @@ const App=()=>{
     if(  window.confirm("Do you want to delete this person?")){
 
         console.log(`hello ${id}`)
-    const url = `http://localhost:3001/persons/${id}`
+    const url = `http://localhost:3001/api/persons/${id}`
     const person= persons.find(n => n.id ===id)
     const changedNote = {...person}
 

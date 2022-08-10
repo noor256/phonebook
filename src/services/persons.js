@@ -1,5 +1,8 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3001/persons'
+
+const baseUrl = 'https://backphonebook.herokuapp.com/api/persons'
+
+
 
 const getAll = () => {
     return axios.get(baseUrl)
@@ -13,4 +16,5 @@ const update = (id, newObject) => {
     return axios.put(`${baseUrl}/${id}`, newObject)
 }
 
-export default {getAll, create, update}
+export default {
+  getAll, create, update}
